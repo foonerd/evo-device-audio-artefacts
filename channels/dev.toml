@@ -1,9 +1,69 @@
+# evo-device-audio release-plane channel pointer — dev
+#
+# Names the currently-tracked plugin bundle versions for the `dev`
+# channel. Each pointer is per-piece (per plugin) so different
+# plugins can advance independently of each other.
+#
+# Signed with the evo project release key. Consumers refuse to
+# apply an unsigned or invalidly-signed pointer.
+
 schema_version = 0
 publisher = "org.evoframework"
 channel = "dev"
-updated_at = "2026-04-28T05:28:56Z"
+updated_at = "2026-07-10T00:00:00Z"
+
+# Per-piece pointers. Track 4G promote advances each pointer as
+# the corresponding piece releases at a new version. Version
+# strings match the semver tags on the source repo.
+#
+# Placeholder set: no piece has a v0.1.13 release yet. Empty
+# version strings signal "no release tracked yet"; consumers
+# refuse the pointer for those pieces in that state.
+
+[[pointers]]
+piece = "org.evoframework.artwork.local"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.artwork.online"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.audio.terminus"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.composition.alsa"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.delivery.alsa"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.hardware.audio-config"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.metadata.local"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.multiroom.evo-native"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.network"
+version = ""
 
 [[pointers]]
 piece = "org.evoframework.playback.mpd"
-version = "0.1.0"
+version = ""
 
+[[pointers]]
+piece = "org.evoframework.playback.options"
+version = ""
+
+[[pointers]]
+piece = "org.evoframework.system.power"
+version = ""
