@@ -12,8 +12,8 @@ publisher = "org.evoframework"
 channel = "dev"
 updated_at = "2026-07-10T00:00:00Z"
 
-# Per-piece pointers. Track 4G promote advances each pointer as
-# the corresponding piece releases at a new version. Version
+# Per-piece pointers. A release promotion advances each pointer
+# as the corresponding piece releases at a new version. Version
 # strings match the semver tags on the source repo.
 #
 # Placeholder set: no piece has a v0.1.13 release yet. Empty
