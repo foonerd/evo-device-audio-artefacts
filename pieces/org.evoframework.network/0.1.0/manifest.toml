@@ -1,0 +1,132 @@
+[plugin]
+name = "org.evoframework.network"
+version = "0.1.0"
+contract = 1
+
+[target]
+shelf = "networking.link"
+shape = 1
+
+[kind]
+instance = "singleton"
+interaction = "respondent"
+
+[transport]
+type = "in-process"
+exec = "<compiled-in>"
+
+[trust]
+class = "standard"
+
+[prerequisites]
+evo_min_version = "0.1.11-rc.1"
+os_family = "linux"
+outbound_network = false
+filesystem_scopes = []
+
+[resources]
+max_memory_mb = 64
+max_cpu_percent = 10
+
+[lifecycle]
+# Reload-cleanable: operator-tunable state covers
+# NetworkManager binding + supervisor preset + connectivity-
+# check policy. A TOML edit triggers teardown + re-admit; the
+# plugin's source supervisor (rtnetlink / nmcli) drops its
+# subscriptions on teardown and re-establishes them with the
+# new configuration on re-admit.
+mode = "reload-cleanable"
+autostart = true
+restart_on_crash = true
+restart_budget = 5
+
+[capabilities.respondent]
+request_types = [
+    "network.nm.status",
+    "network.nm.scan",
+    "network.nm.intent.get",
+    "network.nm.intent.set",
+    "network.nm.intent.apply",
+    "network.nm.captive.status",
+    "network.nm.captive.start",
+    "network.nm.captive.submit",
+    "network.nm.captive.complete",
+    "network.nm.captive.session.start",
+    "network.nm.captive.upstream.fetch",
+    "network.nm.captive.session.close",
+    "network.nm.security.status",
+    "network.nm.security.harden",
+    "network.nm.flight_mode.get",
+    "network.nm.flight_mode.set",
+    "network.nm.radio.status",
+    "network.nm.radio.set",
+    "network.nm.supervisor.status",
+    "network.nm.wifi_devices",
+    "network.nm.wifi.disconnect",
+    "network.nm.wifi.forget",
+    "network.refresh_connectivity",
+]
+response_budget_ms = 15000
+
+# Per-verb capability gate declarations. The framework dispatcher
+# consults this map BEFORE forwarding the request to the plugin's
+# handle_request; a principal that does not satisfy the declared
+# scope refuses at the dispatch boundary with `permission_denied`
+# and the plugin never sees the call. Read-only verbs (status /
+# get / list-devices / supervisor.status / refresh_connectivity /
+# scan) remain unmapped and default to anonymous-OK per the
+# framework's backwards-compatible default. Scan is a listing
+# of what is in range — it reconfigures nothing — and every
+# prior-art peer (NetworkManager's `nmcli device wifi list`,
+# iOS, Android, classic Volumio) lists networks without
+# elevation; only join / apply / change is privileged.
+# Write-class verbs — the paired-operator connect path.
+# `intent.set` (record profile), `intent.apply` (join the
+# network), `captive.start` / `captive.submit` /
+# `captive.complete` (walk the portal on a network already
+# being joined) all gate at `write:network_admin`. Connecting
+# to a Wi-Fi network is the most basic network operation on
+# every consumer device; no prior-art peer (iOS, Android,
+# macOS, classic Volumio) forces a fresh admin re-auth on
+# every join. A paired operator holds `write` continuously
+# from pairing; an unpaired / anonymous session lacks `write`
+# and is refused by this gate.
+#
+# Step-up verbs — destructive posture changes that DO warrant
+# a fresh operator-presence proof: `flight_mode.set` (kills
+# every wireless family device-wide), `radio.set` (per-family
+# radio kill), `security.harden` (rewrites secret-at-rest
+# configuration). These pop the operator-password card by
+# design.
+#
+# Read-only verbs — `status`, `intent.get`, `wifi_devices`,
+# `supervisor.status`, `refresh_connectivity`, `scan`,
+# `flight_mode.get`, `radio.status`, `captive.status` — remain
+# unmapped and default to anonymous-OK per the framework's
+# backwards-compatible baseline.
+#
+# The narrow nmcli + iw + rfkill sudoers grants remain in
+# place as the OS-layer enforcement; the framework gate is the
+# first line of defence, the sudoers grant is the last.
+[capabilities.respondent.verb_capabilities]
+"network.nm.intent.set" = { kind = "write", scope = "network_admin" }
+"network.nm.intent.apply" = { kind = "write", scope = "network_admin" }
+"network.nm.wifi.disconnect" = { kind = "write", scope = "network_admin" }
+"network.nm.wifi.forget" = { kind = "write", scope = "network_admin" }
+"network.nm.captive.start" = { kind = "write", scope = "network_admin" }
+"network.nm.captive.submit" = { kind = "write", scope = "network_admin" }
+"network.nm.captive.complete" = { kind = "write", scope = "network_admin" }
+# session.start is the sole authenticated entry point for the
+# device-proxied captive-session surface — it allocates a
+# 128-bit session_id (unguessable) that gates every subsequent
+# upstream.fetch. session.close and upstream.fetch require a
+# valid session_id to do anything and are therefore protected
+# by session_id unguessability rather than a per-verb capability
+# gate: the framework's captive-session HTTP endpoint gates
+# operator entry at write:network_admin BEFORE forwarding to
+# upstream.fetch, so a separate plugin-side capability check
+# would only block the framework's own dispatcher.
+"network.nm.captive.session.start" = { kind = "write", scope = "network_admin" }
+"network.nm.security.harden" = { kind = "step_up", scope = "network_admin" }
+"network.nm.flight_mode.set" = { kind = "step_up", scope = "network_admin" }
+"network.nm.radio.set" = { kind = "step_up", scope = "network_admin" }

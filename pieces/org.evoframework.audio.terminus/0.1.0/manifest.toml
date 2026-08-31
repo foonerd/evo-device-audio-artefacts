@@ -1,0 +1,52 @@
+[plugin]
+name = "org.evoframework.audio.terminus"
+version = "0.1.0"
+contract = 1
+
+[target]
+shelf = "audio.terminus"
+shape = 1
+
+[kind]
+instance = "singleton"
+interaction = "respondent"
+
+[transport]
+type = "in-process"
+exec = "<compiled-in>"
+
+[trust]
+class = "standard"
+
+[prerequisites]
+evo_min_version = "0.1.12"
+os_family = "linux"
+outbound_network = false
+filesystem_scopes = []
+
+[resources]
+max_memory_mb = 24
+max_cpu_percent = 3
+
+[lifecycle]
+mode = "reload-cleanable"
+autostart = true
+restart_on_crash = true
+restart_budget = 5
+
+[capabilities]
+# subscribe_subjects = true populates
+# LoadContext.subject_state_subscriber + .subject_querier so the
+# plugin can observe the audio.playback.now_playing subject's
+# transport_state field and gate spectrum emission accordingly
+# (emission is silent unless transport_state == "playing"; the
+# capture loop continues running so a resume picks up at the
+# next tick without spawn latency).
+subscribe_subjects = true
+
+[capabilities.respondent]
+request_types = [
+    "get_spectrum_frame",
+    "audio.spectrum.set_demand",
+]
+response_budget_ms = 100

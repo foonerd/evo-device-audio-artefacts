@@ -1,0 +1,7 @@
+schema_version = 0
+piece = "org.evoframework.metadata.local"
+version = "0.1.2"
+git_repository = "https://github.com/foonerd/evo-device-audio.git"
+git_rev = "293a40694f0dbb6c55802805377f5daf4b980c29"
+crate_path = "plugins/org.evoframework.metadata.local"
+published_at = "2026-08-31T17:54:11Z"
