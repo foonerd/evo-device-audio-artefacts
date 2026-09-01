@@ -65,7 +65,6 @@ Empty. Populated when (a) the evo-core release-plane contract lands, and (b) [ev
 
 -   [foonerd/evo-device-audio](https://github.com/foonerd/evo-device-audio) - the source repository this release plane serves.
 -   [foonerd/evo-core](https://github.com/foonerd/evo-core) - the framework.
--   [foonerd/evo-device-volumio-artefacts](https://github.com/foonerd/evo-device-volumio-artefacts) - the first audio distribution's release plane; consumes commons pieces.
 
 ## License
 
