@@ -1,24 +1,11 @@
-# evo-device-audio release-plane channel pointer — dev
-#
-# Names the currently-tracked plugin bundle versions for the `dev`
-# channel. Each pointer is per-piece (per plugin) so different
-# plugins can advance independently of each other.
-#
-# Signed with the evo project release key. Consumers refuse to
-# apply an unsigned or invalidly-signed pointer.
-
 schema_version = 0
 publisher = "org.evoframework"
 channel = "dev"
-updated_at = "2026-07-10T00:00:00Z"
+updated_at = "2026-09-09T08:15:47Z"
 
-# Per-piece pointers. A release promotion advances each pointer
-# as the corresponding piece releases at a new version. Version
-# strings match the semver tags on the source repo.
-#
-# Placeholder set: no piece has a v0.1.13 release yet. Empty
-# version strings signal "no release tracked yet"; consumers
-# refuse the pointer for those pieces in that state.
+[[pointers]]
+piece = "evo-device-audio"
+version = "0.1.13"
 
 [[pointers]]
 piece = "org.evoframework.artwork.local"
@@ -67,3 +54,4 @@ version = ""
 [[pointers]]
 piece = "org.evoframework.system.power"
 version = ""
+
