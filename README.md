@@ -20,7 +20,24 @@ flowchart LR
     consumer ==>|4. fetch, verify, place| pieces
 ```
 
-Empty today. The release-plane contract (artefact-manifest schema, channel-pointer signing format, verification protocol) is being authored in evo-core; the publish pipeline waits on its release. First content arrives when both: (a) the contract is documented in evo-core, (b) [evo-device-audio](https://github.com/foonerd/evo-device-audio)'s `promote.yml` workflow is wired against it.
+Two stores. Do not mix them.
+
+**Git (this tree)** — piece slots that stay under GitHub's 100 MB blob limit:
+
+- `binaries/evo-device-audio/<version>/<target>/` — audio steward
+- `bundles/<plugin>/<target>/<plugin>-<version>-<target>.tar.gz` — OOP plugins
+- `channels/` — `dev` / `test` / `prod` pointer files
+- `bundles/distribution/<version>.toml` — thin pointer at the first-boot tarball (URL, sha256, size). Not the tarball.
+
+**GitHub Releases** — the first-boot installer tarball (~110 MB). GitHub rejects git blobs over 100 MB. Testers already curl Latest:
+
+```
+https://github.com/foonerd/evo-device-audio-artefacts/releases/latest/download/evo-device-audio-<triple>-<version>.tar.gz
+```
+
+A named cut is `releases/download/<tag>/`. Re-upload of the same release tag is a refuse.
+
+`pieces/` is leftover stub catalogue (`manifest.toml` + `source.toml` only) from a deleted workflow. Promote ignores it. Real plugin bytes are under `bundles/`.
 
 ## Channels
 
@@ -41,12 +58,13 @@ Either way: the consumer verifies the manifest signature against the commons pub
 
 ## Publishing artefacts
 
-Two workflows in [evo-device-audio](https://github.com/foonerd/evo-device-audio) write to this repository (placeholders today; activate when the release-plane contract lands in evo-core):
+Workflows on [evo-device-audio](https://github.com/foonerd/evo-device-audio) write here:
 
--   **continuous-dev** - on code commits to the source repo, automatically builds, signs, and publishes to the `dev` channel.
--   **promote** - on manual dispatch, edits channel pointers in the manifest and re-signs the manifest. No rebuild.
+-   **publish-pieces** — mint steward and plugin slots into `binaries/` and `bundles/`. Append-only. A published version is frozen.
+-   **publish-distribution-bundle** — bake the first-boot tarball, upload it as a GitHub Release asset, commit only `bundles/distribution/<version>.toml`. Do not `git add` the tarball.
+-   **promote** — move a channel pointer. No rebuild.
 
-The `manual-build` workflow does not publish to this repository; it builds and uploads to GitHub Actions per-run artefact storage for inspection only.
+Sibling public repos (`evo-ui`, `evo-kiosk`, `evo-device-boot`) mint their own pieces into this same repository. One fetch plane.
 
 ## Signing and trust
 
@@ -59,7 +77,7 @@ Distributions that admit `org.evoframework.*` plugins bundle this trust root by 
 
 ## Status
 
-Empty. Populated when (a) the evo-core release-plane contract lands, and (b) [evo-device-audio](https://github.com/foonerd/evo-device-audio)'s publish workflows wire against it.
+Piece slots and channel files live in this git tree. The installer tarball lives on GitHub Releases. See [RELEASE_PLANE.md](https://github.com/foonerd/evo-core/blob/main/docs/engineering/RELEASE_PLANE.md) §2.4–§2.5.
 
 ## Related
 
