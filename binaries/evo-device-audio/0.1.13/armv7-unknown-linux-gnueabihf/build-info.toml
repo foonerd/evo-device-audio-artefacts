@@ -1,9 +1,0 @@
-schema_version = 0
-kind = "audio-steward"
-piece = "evo-device-audio"
-version = "0.1.13"
-target = "armv7-unknown-linux-gnueabihf"
-binaries = ["evo-device-audio"]
-built_at = "2026-09-08T19:41:23Z"
-publisher = "org.evoframework"
-git_rev = "c1b6dbf532405ad6108a45d8b3b9caeb6638e98d"
