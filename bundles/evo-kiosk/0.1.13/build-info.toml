@@ -1,0 +1,7 @@
+schema_version = 0
+kind = "kiosk-session"
+piece = "evo-kiosk"
+version = "0.1.13"
+built_at = "2026-09-12T21:03:10Z"
+publisher = "org.evoframework"
+git_rev = "75796d997f960e2edc6e9bd764219fe31a93edd7"
