@@ -9,18 +9,18 @@ download_base = "https://github.com/foonerd/evo-device-audio-artefacts/releases/
 [[assets]]
 target = "x86_64-unknown-linux-gnu"
 name = "evo-device-audio-x86_64-unknown-linux-gnu-0.1.13.tar.gz"
-sha256 = "5e5ca2be27db3e00052a8207709cd71e9447ccd814a1f20340ef20243eafd6ab"
-size = 121128575
+sha256 = "f17a56abda3aa7539b3d5a57180c0ff96585db17d990377a50b321f743d5a57f"
+size = 121128439
 
 [[assets]]
 target = "aarch64-unknown-linux-gnu"
 name = "evo-device-audio-aarch64-unknown-linux-gnu-0.1.13.tar.gz"
-sha256 = "6d35e30aea2e9540548ff1b25f9ea8697a4b98df4865aa3a38c6ca892d0a6078"
-size = 115655765
+sha256 = "e565ae025975515a691fb17fbce94fbb81f538ad07305883ecddc6f12ae116c0"
+size = 115655412
 
 [[assets]]
 target = "armv7-unknown-linux-gnueabihf"
 name = "evo-device-audio-armv7-unknown-linux-gnueabihf-0.1.13.tar.gz"
-sha256 = "34c3d0b34986ebce712485da6c13ebdd29d14c5b2327f8c31d5cfda0c72d5f81"
-size = 117145603
+sha256 = "9a0d51c1694877cf249fdaf56bbe09125676ab9b2f868c944f8037189b239be8"
+size = 117145449
 
