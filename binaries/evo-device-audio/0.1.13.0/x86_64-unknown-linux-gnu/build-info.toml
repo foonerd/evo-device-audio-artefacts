@@ -1,0 +1,9 @@
+schema_version = 0
+kind = "audio-steward"
+piece = "evo-device-audio"
+version = "0.1.13.0"
+target = "x86_64-unknown-linux-gnu"
+binaries = ["evo-device-audio"]
+built_at = "2026-09-23T12:32:15Z"
+publisher = "org.evoframework"
+git_rev = "6f302c96eed27cbe38e85182cf357427028f68ee"
