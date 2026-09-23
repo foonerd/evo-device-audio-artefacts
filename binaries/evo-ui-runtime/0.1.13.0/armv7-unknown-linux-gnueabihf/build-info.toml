@@ -1,0 +1,8 @@
+schema_version = 0
+kind = "ui-runtime"
+piece = "evo-ui-runtime"
+version = "0.1.13.0"
+target = "armv7-unknown-linux-gnueabihf"
+built_at = "2026-09-23T12:23:19Z"
+publisher = "org.evoframework"
+git_rev = "3b44775eed5cac1131769b79677b2faf053b2f06"
