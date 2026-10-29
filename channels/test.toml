@@ -1,7 +1,7 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "test"
-updated_at = "2026-10-29T22:47:00Z"
+updated_at = "2026-10-29T22:49:12Z"
 
 [[pointers]]
 piece = "org.evoframework.artwork.local"
@@ -57,6 +57,10 @@ version = "0.1.13.0"
 
 [[pointers]]
 piece = "org.evoframework.playback.options"
+version = "0.1.13.0"
+
+[[pointers]]
+piece = "org.evoframework.system.kiosk"
 version = "0.1.13.0"
 
 [[pointers]]
