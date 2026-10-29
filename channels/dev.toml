@@ -1,7 +1,7 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "dev"
-updated_at = "2026-10-29T22:28:40Z"
+updated_at = "2026-10-29T22:30:52Z"
 
 [[pointers]]
 piece = "evo-device-audio"
@@ -21,7 +21,7 @@ version = ""
 
 [[pointers]]
 piece = "org.evoframework.composition.alsa"
-version = ""
+version = "0.1.13.0"
 
 [[pointers]]
 piece = "org.evoframework.delivery.alsa"
