@@ -1,7 +1,7 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "dev"
-updated_at = "2026-10-29T22:51:49Z"
+updated_at = "2026-10-29T22:53:59Z"
 
 [[pointers]]
 piece = "evo-device-audio"
@@ -65,6 +65,10 @@ version = "0.1.13.0"
 
 [[pointers]]
 piece = "org.evoframework.source.dlna"
+version = "0.1.13.0"
+
+[[pointers]]
+piece = "org.evoframework.storage.usb"
 version = "0.1.13.0"
 
 [[pointers]]
