@@ -1,7 +1,7 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "dev"
-updated_at = "2026-10-29T22:41:29Z"
+updated_at = "2026-10-29T22:43:21Z"
 
 [[pointers]]
 piece = "evo-device-audio"
@@ -45,6 +45,10 @@ version = "0.1.13.0"
 
 [[pointers]]
 piece = "org.evoframework.network"
+version = "0.1.13.0"
+
+[[pointers]]
+piece = "org.evoframework.network.shares"
 version = "0.1.13.0"
 
 [[pointers]]
