@@ -1,7 +1,11 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "test"
-updated_at = "2026-10-29T22:53:05Z"
+updated_at = "2026-10-29T22:55:22Z"
+
+[[pointers]]
+piece = "org.evoframework.alarm"
+version = "0.1.0"
 
 [[pointers]]
 piece = "org.evoframework.artwork.local"
