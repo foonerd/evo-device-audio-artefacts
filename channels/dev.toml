@@ -1,7 +1,7 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "dev"
-updated_at = "2026-10-30T20:27:39Z"
+updated_at = "2026-10-30T20:30:41Z"
 
 [[pointers]]
 piece = "evo-device-audio"
@@ -37,7 +37,7 @@ version = "0.1.13.0"
 
 [[pointers]]
 piece = "org.evoframework.identity.locale"
-version = "0.1.0"
+version = "0.1.1"
 
 [[pointers]]
 piece = "org.evoframework.metadata.local"
