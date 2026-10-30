@@ -1,0 +1,8 @@
+schema_version = 0
+piece = "evo-plugin-tool"
+version = "0.1.13.0"
+target = "aarch64-unknown-linux-gnu"
+source_repo = "foonerd/evo-core-artefacts"
+source_commit = "07ea57d"
+evo_core_tag = "v0.1.13.0"
+sha256 = "861d585b90e0a4d951d555739b4ebcaf10a1a95e2ce612e70446bc00db1f5cf1"
