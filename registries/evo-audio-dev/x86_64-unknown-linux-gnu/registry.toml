@@ -3,8 +3,8 @@ name = "evo-audio-dev"
 maintainer = "org.evoframework"
 public_key_fingerprint = "sha256:9cd7d7381ee7c2b3bfa490b39077afdc925192299dda661ef94dddba71e574da"
 schema_version = 1
-generated_at = "2026-10-30T04:09:37Z"
-expires_at = "2027-01-28T04:09:37Z"
+generated_at = "2026-10-30T20:34:02Z"
+expires_at = "2027-01-28T20:34:02Z"
 manifest_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-dev/x86_64-unknown-linux-gnu/registry.toml"
 signature_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-dev/x86_64-unknown-linux-gnu/registry.sig"
 
@@ -15,9 +15,9 @@ trust_class = "platform"
 architectures = ["x86_64-unknown-linux-gnu"]
 
 [[plugins.versions]]
-version = "0.1.0"
-url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/x86_64-unknown-linux-gnu/org.evoframework.alarm-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-sha256 = "7bf4d69639874b308d1bd36132ca52b0fe21206060705e75677e339ead67a776"
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/x86_64-unknown-linux-gnu/org.evoframework.alarm-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "943eed38f6ebc855ae59f35dd47d1cec9f3c35428b332252d3377998355379bf"
 
 [[plugins]]
 name = "org.evoframework.artwork.local"
@@ -92,9 +92,9 @@ trust_class = "platform"
 architectures = ["x86_64-unknown-linux-gnu"]
 
 [[plugins.versions]]
-version = "0.1.0"
-url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/x86_64-unknown-linux-gnu/org.evoframework.identity.locale-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-sha256 = "96c7ae6cdaf424199cea375f75f3bbbffa7a06b5980abc5c7ab4e55e1bc476b6"
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/x86_64-unknown-linux-gnu/org.evoframework.identity.locale-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "9d007cb6952e5b9b28abc75780ad4a8fd5872f1c7e920a7301c4d78ac7413ae5"
 
 [[plugins]]
 name = "org.evoframework.metadata.local"

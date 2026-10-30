@@ -3,8 +3,8 @@ name = "evo-audio-dev"
 maintainer = "org.evoframework"
 public_key_fingerprint = "sha256:9cd7d7381ee7c2b3bfa490b39077afdc925192299dda661ef94dddba71e574da"
 schema_version = 1
-generated_at = "2026-10-30T04:09:38Z"
-expires_at = "2027-01-28T04:09:38Z"
+generated_at = "2026-10-30T20:34:03Z"
+expires_at = "2027-01-28T20:34:03Z"
 manifest_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-dev/armv7-unknown-linux-gnueabihf/registry.toml"
 signature_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-dev/armv7-unknown-linux-gnueabihf/registry.sig"
 
@@ -15,9 +15,9 @@ trust_class = "platform"
 architectures = ["armv7-unknown-linux-gnueabihf"]
 
 [[plugins.versions]]
-version = "0.1.0"
-url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/armv7-unknown-linux-gnueabihf/org.evoframework.alarm-0.1.0-armv7-unknown-linux-gnueabihf.tar.gz"
-sha256 = "67d362b76db59c76c5dba68165c193a1ced47c7a0ac67b89b7064776920a99b7"
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/armv7-unknown-linux-gnueabihf/org.evoframework.alarm-0.1.1-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "ac80b643a91262f7dd361af89dee1ddac7b6abaf4e3257d207dc7ab40f4ea9fb"
 
 [[plugins]]
 name = "org.evoframework.artwork.local"
@@ -92,9 +92,9 @@ trust_class = "platform"
 architectures = ["armv7-unknown-linux-gnueabihf"]
 
 [[plugins.versions]]
-version = "0.1.0"
-url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/armv7-unknown-linux-gnueabihf/org.evoframework.identity.locale-0.1.0-armv7-unknown-linux-gnueabihf.tar.gz"
-sha256 = "89be8b7eaed9c54870a03bac09d152342489b912f1a751c1de70c929bc881616"
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/armv7-unknown-linux-gnueabihf/org.evoframework.identity.locale-0.1.1-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "df74028c00698f24fb3420b1fd6ca5ac1ae2059e5a4c2d0f1ea333d2a98ba339"
 
 [[plugins]]
 name = "org.evoframework.metadata.local"

@@ -3,8 +3,8 @@ name = "evo-audio-prod"
 maintainer = "org.evoframework"
 public_key_fingerprint = "sha256:9cd7d7381ee7c2b3bfa490b39077afdc925192299dda661ef94dddba71e574da"
 schema_version = 1
-generated_at = "2026-10-30T04:09:42Z"
-expires_at = "2027-01-28T04:09:42Z"
+generated_at = "2026-10-30T20:34:08Z"
+expires_at = "2027-01-28T20:34:08Z"
 manifest_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-prod/aarch64-unknown-linux-gnu/registry.toml"
 signature_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-prod/aarch64-unknown-linux-gnu/registry.sig"
 
@@ -15,9 +15,9 @@ trust_class = "platform"
 architectures = ["aarch64-unknown-linux-gnu"]
 
 [[plugins.versions]]
-version = "0.1.0"
-url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/aarch64-unknown-linux-gnu/org.evoframework.alarm-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-sha256 = "90f540b72285987f9ec10b21b91491afa2ea243d89bfc5ab80ed7b411f650bd6"
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/aarch64-unknown-linux-gnu/org.evoframework.alarm-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+sha256 = "141e133e0dbf9becd78f63957b08d4841bf0ade6c3d3a998eff1770180f44741"
 
 [[plugins]]
 name = "org.evoframework.artwork.local"
@@ -92,9 +92,9 @@ trust_class = "platform"
 architectures = ["aarch64-unknown-linux-gnu"]
 
 [[plugins.versions]]
-version = "0.1.0"
-url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/aarch64-unknown-linux-gnu/org.evoframework.identity.locale-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-sha256 = "057c9be7a39a5f2f6a2eea32bf7c4cefa2b4b49793b254e324ec0656b0691186"
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/aarch64-unknown-linux-gnu/org.evoframework.identity.locale-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+sha256 = "5d0acc4703c84fa2902ad5f213b10a0f02863d0e3eee1456f464a533fe4384b5"
 
 [[plugins]]
 name = "org.evoframework.metadata.local"
