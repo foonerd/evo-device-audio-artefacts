@@ -1,0 +1,262 @@
+[registry]
+name = "evo-audio-prod"
+maintainer = "org.evoframework"
+public_key_fingerprint = "sha256:9cd7d7381ee7c2b3bfa490b39077afdc925192299dda661ef94dddba71e574da"
+schema_version = 1
+generated_at = "2026-10-30T04:09:43Z"
+expires_at = "2027-01-28T04:09:43Z"
+manifest_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-prod/x86_64-unknown-linux-gnu/registry.toml"
+signature_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-prod/x86_64-unknown-linux-gnu/registry.sig"
+
+[[plugins]]
+name = "org.evoframework.alarm"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/x86_64-unknown-linux-gnu/org.evoframework.alarm-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "7bf4d69639874b308d1bd36132ca52b0fe21206060705e75677e339ead67a776"
+
+[[plugins]]
+name = "org.evoframework.artwork.local"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.artwork.local/x86_64-unknown-linux-gnu/org.evoframework.artwork.local-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "9bee7aeef53465f4eb5658b77bc52244e9ed22b2f152053e5c18f8d8cd50186d"
+
+[[plugins]]
+name = "org.evoframework.artwork.online"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.artwork.online/x86_64-unknown-linux-gnu/org.evoframework.artwork.online-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "c82448417f3ed939f70c2182b2e72fa054249f6ed8c16b9aa44893acd028a4df"
+
+[[plugins]]
+name = "org.evoframework.audio.terminus"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.audio.terminus/x86_64-unknown-linux-gnu/org.evoframework.audio.terminus-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "53862432d3892f6c310f89cfc80abebbb1840039b8e20fa4cc1588d08a54aa0f"
+
+[[plugins]]
+name = "org.evoframework.composition.alsa"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.composition.alsa/x86_64-unknown-linux-gnu/org.evoframework.composition.alsa-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "5cadcbfb4419a45511a65a63e3420fabc22225894f98364d49ab7aba9a8d2af0"
+
+[[plugins]]
+name = "org.evoframework.delivery.alsa"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.delivery.alsa/x86_64-unknown-linux-gnu/org.evoframework.delivery.alsa-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "4d8699033026bce296b9b2e7ebcd0c9aac432439cdb76e24ccd78c8b722a7f78"
+
+[[plugins]]
+name = "org.evoframework.hardware.audio-config"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.hardware.audio-config/x86_64-unknown-linux-gnu/org.evoframework.hardware.audio-config-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "327ac49471d5de010b9bb9265c97f12efc05127fec1c69248305e4bfc841b6f6"
+
+[[plugins]]
+name = "org.evoframework.identity.locale"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/x86_64-unknown-linux-gnu/org.evoframework.identity.locale-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "96c7ae6cdaf424199cea375f75f3bbbffa7a06b5980abc5c7ab4e55e1bc476b6"
+
+[[plugins]]
+name = "org.evoframework.metadata.local"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.2"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.metadata.local/x86_64-unknown-linux-gnu/org.evoframework.metadata.local-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "f3560ae704469ba76ce09559bb702db90cb5b561248124f84d483330db1cb4fd"
+
+[[plugins]]
+name = "org.evoframework.metadata.online"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.metadata.online/x86_64-unknown-linux-gnu/org.evoframework.metadata.online-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "5caf1353df173e6e249fb8569bdaef87f48065158c3a46c6ff8cc19015f09eca"
+
+[[plugins]]
+name = "org.evoframework.multiroom.evo-native"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.multiroom.evo-native/x86_64-unknown-linux-gnu/org.evoframework.multiroom.evo-native-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "f962038b42ed5b753246c576143bd34a89955bde112457554a701a78fb838c83"
+
+[[plugins]]
+name = "org.evoframework.network"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.network/x86_64-unknown-linux-gnu/org.evoframework.network-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "0f7cd3d28ebee5f96c476f0017d8467ee5e518a2d763db737854b26b0325f414"
+
+[[plugins]]
+name = "org.evoframework.network.shares"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.network.shares/x86_64-unknown-linux-gnu/org.evoframework.network.shares-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "8f0da05fcf80b68f6d4db94b8d9131fe3bddd810b1ea527261aa93492d6c0b2f"
+
+[[plugins]]
+name = "org.evoframework.network.smb-server"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.network.smb-server/x86_64-unknown-linux-gnu/org.evoframework.network.smb-server-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "ff4c731a6a9fd16b9c41e306077132b16867eeebb9fbdea10a49dd93ec1f06b3"
+
+[[plugins]]
+name = "org.evoframework.playback.mpd"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.playback.mpd/x86_64-unknown-linux-gnu/org.evoframework.playback.mpd-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "ffae4ccd57ab83b3cc3f0f4f704b688cddb113937c4e8a4502f1e27da688c807"
+
+[[plugins]]
+name = "org.evoframework.playback.options"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.playback.options/x86_64-unknown-linux-gnu/org.evoframework.playback.options-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "50739e943e5542e284aac9dd790bf30026e52a86d8ee541bac20a1316b0cc3c7"
+
+[[plugins]]
+name = "org.evoframework.source.dlna"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.source.dlna/x86_64-unknown-linux-gnu/org.evoframework.source.dlna-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "966af11c34f068998a215c71ec2c4c9f6b11f0e19a6f994d1d44fcff62713f6a"
+
+[[plugins]]
+name = "org.evoframework.storage.usb"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.storage.usb/x86_64-unknown-linux-gnu/org.evoframework.storage.usb-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "c86e06b2308f76764566f698b71cba146264abdc3d8d25ac1e61cd4c57755394"
+
+[[plugins]]
+name = "org.evoframework.system.backup"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.backup/x86_64-unknown-linux-gnu/org.evoframework.system.backup-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "e3e90fdf2abba1a1fbc63f1854cfb4c7ca38f8f6aecefa62f56c7d17cdc39f86"
+
+[[plugins]]
+name = "org.evoframework.system.info"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.13"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.info/x86_64-unknown-linux-gnu/org.evoframework.system.info-0.1.13-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "cd75c0f9df983ae10eadb4ca9f7b56092323ff93b85f766f27c172985b96533b"
+
+[[plugins]]
+name = "org.evoframework.system.kiosk"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.kiosk/x86_64-unknown-linux-gnu/org.evoframework.system.kiosk-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "69a5d77d3fe0d8d556dd36565ebff3303ff714d233341744f055ca6540ebb91d"
+
+[[plugins]]
+name = "org.evoframework.system.notifications"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.notifications/x86_64-unknown-linux-gnu/org.evoframework.system.notifications-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "4a534b56975ff1a5472272047260a45bf6be3190b9f3b47ebca34d1826ed8492"
+
+[[plugins]]
+name = "org.evoframework.system.power"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["x86_64-unknown-linux-gnu"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.power/x86_64-unknown-linux-gnu/org.evoframework.system.power-0.1.13.0-x86_64-unknown-linux-gnu.tar.gz"
+sha256 = "7bad1f021cea14fcf2ccef379b09ce0b1bb795fa42be500769973fb45cae25e1"

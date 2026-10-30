@@ -1,0 +1,262 @@
+[registry]
+name = "evo-audio-prod"
+maintainer = "org.evoframework"
+public_key_fingerprint = "sha256:9cd7d7381ee7c2b3bfa490b39077afdc925192299dda661ef94dddba71e574da"
+schema_version = 1
+generated_at = "2026-10-30T04:09:44Z"
+expires_at = "2027-01-28T04:09:44Z"
+manifest_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-prod/armv7-unknown-linux-gnueabihf/registry.toml"
+signature_url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/registries/evo-audio-prod/armv7-unknown-linux-gnueabihf/registry.sig"
+
+[[plugins]]
+name = "org.evoframework.alarm"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.alarm/armv7-unknown-linux-gnueabihf/org.evoframework.alarm-0.1.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "67d362b76db59c76c5dba68165c193a1ced47c7a0ac67b89b7064776920a99b7"
+
+[[plugins]]
+name = "org.evoframework.artwork.local"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.artwork.local/armv7-unknown-linux-gnueabihf/org.evoframework.artwork.local-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "6120e56f98d164dd9e17242f99259762aa7ae542f1e72a9b8a2e0c6f87a31bdd"
+
+[[plugins]]
+name = "org.evoframework.artwork.online"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.artwork.online/armv7-unknown-linux-gnueabihf/org.evoframework.artwork.online-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "5c29c7c1e8d1a08b215ee7873f1d2cac7bd087d6ea32583f28ba502963615614"
+
+[[plugins]]
+name = "org.evoframework.audio.terminus"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.audio.terminus/armv7-unknown-linux-gnueabihf/org.evoframework.audio.terminus-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "fc1dbafd2514ee6f14156bfe659c55136cb4596f3f11ee8ac97790bf956fdd15"
+
+[[plugins]]
+name = "org.evoframework.composition.alsa"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.composition.alsa/armv7-unknown-linux-gnueabihf/org.evoframework.composition.alsa-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "164f63bddc61ecc8b93123b4cc9f5563a7ec54c4b3953e2f03294db4ae830543"
+
+[[plugins]]
+name = "org.evoframework.delivery.alsa"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.delivery.alsa/armv7-unknown-linux-gnueabihf/org.evoframework.delivery.alsa-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "37289b229601e49689912dab72b6512099276b43782eed7358685dc4bbf757d8"
+
+[[plugins]]
+name = "org.evoframework.hardware.audio-config"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.hardware.audio-config/armv7-unknown-linux-gnueabihf/org.evoframework.hardware.audio-config-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "775563d27e9df84bf22b2522f36591cc289f65dd4dc97412d33a6b0669132ebf"
+
+[[plugins]]
+name = "org.evoframework.identity.locale"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.identity.locale/armv7-unknown-linux-gnueabihf/org.evoframework.identity.locale-0.1.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "89be8b7eaed9c54870a03bac09d152342489b912f1a751c1de70c929bc881616"
+
+[[plugins]]
+name = "org.evoframework.metadata.local"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.2"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.metadata.local/armv7-unknown-linux-gnueabihf/org.evoframework.metadata.local-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "ed0ce951752b30a77d661221b54b6733385c30046bc6472f13fc03b291c1d4d3"
+
+[[plugins]]
+name = "org.evoframework.metadata.online"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.metadata.online/armv7-unknown-linux-gnueabihf/org.evoframework.metadata.online-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "bf96d8b1007a7b07fb5b929c2eba99e5f02f7fbf6525321384cefc8c24a06fc5"
+
+[[plugins]]
+name = "org.evoframework.multiroom.evo-native"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.multiroom.evo-native/armv7-unknown-linux-gnueabihf/org.evoframework.multiroom.evo-native-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "793c96dc9b15fb1579f7847ab7ea0cf6404b90096f7e884db1e3c8f8091be7f3"
+
+[[plugins]]
+name = "org.evoframework.network"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.network/armv7-unknown-linux-gnueabihf/org.evoframework.network-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "422cdf8e0cc64f86b70f88c254c052f55a03cc3a0e4f9203a578f61114b9db14"
+
+[[plugins]]
+name = "org.evoframework.network.shares"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.network.shares/armv7-unknown-linux-gnueabihf/org.evoframework.network.shares-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "def05e3abb7506454afe999cfd1ba6643eeb9e1492bfa7d9a20d09077b1c8bfe"
+
+[[plugins]]
+name = "org.evoframework.network.smb-server"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.network.smb-server/armv7-unknown-linux-gnueabihf/org.evoframework.network.smb-server-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "3038423eb1ae5d4d9bd23cf3ccdf3fb45dfd28c3c929733b9d2d17aa4536b8be"
+
+[[plugins]]
+name = "org.evoframework.playback.mpd"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.playback.mpd/armv7-unknown-linux-gnueabihf/org.evoframework.playback.mpd-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "3c75815c99bd963101ef14e91493feebc21a3dc94ab552e20267d0f58cbfe005"
+
+[[plugins]]
+name = "org.evoframework.playback.options"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.playback.options/armv7-unknown-linux-gnueabihf/org.evoframework.playback.options-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "382d6d07599addfc924dae855c55f0e9c686cf4ad46ca75b3fec25403945ac16"
+
+[[plugins]]
+name = "org.evoframework.source.dlna"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.source.dlna/armv7-unknown-linux-gnueabihf/org.evoframework.source.dlna-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "7662465730e157d45d473c06aec966563b3b12b14e869c47b107f72f2ada3321"
+
+[[plugins]]
+name = "org.evoframework.storage.usb"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.storage.usb/armv7-unknown-linux-gnueabihf/org.evoframework.storage.usb-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "ba5679719898f7d9f7bf5ecdfcd345f2c9d105c0e006c02022e43d4c9c71a7f3"
+
+[[plugins]]
+name = "org.evoframework.system.backup"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.backup/armv7-unknown-linux-gnueabihf/org.evoframework.system.backup-0.1.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "4325ef590b31d367d757d1dabd3ffa364b402bfd9602c29b9f97509f9894cf2c"
+
+[[plugins]]
+name = "org.evoframework.system.info"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.13"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.info/armv7-unknown-linux-gnueabihf/org.evoframework.system.info-0.1.13-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "695857d1ded220f90d16e13af7744e6e81bb17d8e718ce757ca687f116236c6b"
+
+[[plugins]]
+name = "org.evoframework.system.kiosk"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.1"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.kiosk/armv7-unknown-linux-gnueabihf/org.evoframework.system.kiosk-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "81026bd80396b22fbcdcfbe8fa0c7f2a3d3bbebe90884b956ed1999c7b474b75"
+
+[[plugins]]
+name = "org.evoframework.system.notifications"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.notifications/armv7-unknown-linux-gnueabihf/org.evoframework.system.notifications-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "eb0b0f7293469f7e0c9a084cccb176a0131ec8cf4effd7ed8e25043b746e4229"
+
+[[plugins]]
+name = "org.evoframework.system.power"
+plugin_kind = "functional"
+trust_class = "platform"
+architectures = ["armv7-unknown-linux-gnueabihf"]
+
+[[plugins.versions]]
+version = "0.1.0"
+url = "https://raw.githubusercontent.com/foonerd/evo-device-audio-artefacts/main/bundles/org.evoframework.system.power/armv7-unknown-linux-gnueabihf/org.evoframework.system.power-0.1.13.0-armv7-unknown-linux-gnueabihf.tar.gz"
+sha256 = "a0b1c44c70b27259fb0ca19058fdcb87c8de54d4ce034f6335358bc066ec221d"
