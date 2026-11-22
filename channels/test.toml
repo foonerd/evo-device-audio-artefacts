@@ -1,7 +1,11 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "test"
-updated_at = "2026-10-30T20:29:51Z"
+updated_at = "2026-11-22T18:39:13Z"
+
+[[pointers]]
+piece = "evo-device-audio"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.alarm"
