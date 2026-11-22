@@ -1,0 +1,7 @@
+schema_version = 0
+kind = "audio-dist"
+piece = "evo-device-audio-dist"
+version = "0.1.13.1"
+built_at = "2026-11-22T16:16:12Z"
+publisher = "org.evoframework"
+git_rev = "b851a01f4f4a43c0ed8a72177649724ab97a3f43"
