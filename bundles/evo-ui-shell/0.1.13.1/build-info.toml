@@ -1,0 +1,7 @@
+schema_version = 0
+kind = "ui-shell"
+piece = "evo-ui-shell"
+version = "0.1.13.1"
+built_at = "2026-11-22T14:07:16Z"
+publisher = "org.evoframework"
+git_rev = "e811278b18ebc7617336f2e0ef906a689948c873"
