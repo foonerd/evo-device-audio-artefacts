@@ -1,7 +1,7 @@
 schema_version = 0
 publisher = "org.evoframework"
 channel = "test"
-updated_at = "2026-11-22T18:43:27Z"
+updated_at = "2026-11-22T18:45:53Z"
 
 [[pointers]]
 piece = "evo-device-audio"
@@ -29,73 +29,73 @@ version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.delivery.alsa"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.hardware.audio-config"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.identity.locale"
-version = "0.1.1"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.metadata.local"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.metadata.online"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.multiroom.evo-native"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.network"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.network.shares"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.network.smb-server"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.playback.mpd"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.playback.options"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.source.dlna"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.storage.usb"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.system.backup"
-version = "0.1.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.system.info"
-version = "0.1.13"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.system.kiosk"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.system.notifications"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
 [[pointers]]
 piece = "org.evoframework.system.power"
-version = "0.1.13.0"
+version = "0.1.13.1"
 
