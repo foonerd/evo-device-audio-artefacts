@@ -1,26 +1,26 @@
 schema_version = 0
 kind = "distribution-bundle"
 version = "0.1.13"
-cut = "v0.1.13.0"
+cut = "v0.1.13.1"
 publisher = "org.evoframework"
-release_url = "https://github.com/foonerd/evo-device-audio-artefacts/releases/tag/v0.1.13.0"
-download_base = "https://github.com/foonerd/evo-device-audio-artefacts/releases/download/v0.1.13.0"
+release_url = "https://github.com/foonerd/evo-device-audio-artefacts/releases/tag/v0.1.13.1"
+download_base = "https://github.com/foonerd/evo-device-audio-artefacts/releases/download/v0.1.13.1"
 
 [[assets]]
 target = "x86_64-unknown-linux-gnu"
 name = "evo-device-audio-x86_64-unknown-linux-gnu-0.1.13.tar.gz"
-sha256 = "0c69411918aa2b11c7dc5ed69beb12c6bbbe40b8dbf18d2e267bce4f25af947a"
-size = 121542900
+sha256 = "969b03d3df4c39e739623af7aa2fbf56e0d246cd210c92bdf1c0ac9d061bc6cd"
+size = 138252595
 
 [[assets]]
 target = "aarch64-unknown-linux-gnu"
 name = "evo-device-audio-aarch64-unknown-linux-gnu-0.1.13.tar.gz"
-sha256 = "0f986854d82f4b8c81a05724fc54b3f583445243c17c1af8a54d5dbb997d56ce"
-size = 116076229
+sha256 = "abf9ebcfe5014a24ba784d3f0d8fbe3119f673024838497cfc86170d87c8b40a"
+size = 132068980
 
 [[assets]]
 target = "armv7-unknown-linux-gnueabihf"
 name = "evo-device-audio-armv7-unknown-linux-gnueabihf-0.1.13.tar.gz"
-sha256 = "b26bae10b9b7bb56fefa42a6335a1fb785610c735a5bd27279c4635272e284e1"
-size = 117616928
+sha256 = "7173b03d8d2ebf3ad0049d7cecf62411d9a9bf53742ef5b7fde4390fd8fb903d"
+size = 134411386
 
